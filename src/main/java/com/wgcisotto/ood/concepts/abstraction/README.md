@@ -11,23 +11,25 @@ For example, when we have a phone call, we don't know the internal processing. I
 We never buy a "device," but we always buy something more specific: iPhone, GSII, Nokia 3310, etc. Here, the iPhone, GSII, and N3310 are concrete things; the device is abstract.
 
 - Implementation
+
 In Java, abstraction is achieved by Interfaces and Abstract classes. We can achieve 100% abstraction using Interfaces.
 Abstraction hiding internal details and showing functionality is known as abstraction.
 
 Let's understand Abstraction with few examples.
 
-Example 1: Employee, Contractor, and FullTimeEmployee Example
+- Example 1: Employee, Contractor, and FullTimeEmployee Example
 
 In this example, we create abstract Employee class and which contains abstract calculateSalary()method. Let the subclasses extend Employee class and implement calculateSalary() method.
-Let's create Contractor and FullTimeEmployee classes as we know that the salary structure for contractor and full-time employees are different so let these classes to override and implement calculateSalary() method.
 
-Step 1: Let's first create the superclass Employee. Note the usage of abstract keyword in the class definition. This marks the class to be abstract, which means it can not be instantiated directly. We define a method called calculateSalary() as an abstract method. This way you leave the implementation of this method to the inheritors of the Employee class.
+    Let's create Contractor and FullTimeEmployee classes as we know that the salary structure for contractor and full-time employees are different so let these classes to override and implement calculateSalary() method.
 
-Step 2: The Contractor class inherits all properties from its parent Employee but have to provide its own implementation to calculateSalary() method. In this case, we multiply the value of payment per hour with given working hours.
+    Step 1: Let's first create the superclass Employee. Note the usage of abstract keyword in the class definition. This marks the class to be abstract, which means it can not be instantiated directly. We define a method called calculateSalary() as an abstract method. This way you leave the implementation of this method to the inheritors of the Employee class.
 
-Step 3: The FullTimeEmployee also has its own implementation of calculateSalary() method. In this case, we just multiply by a constant 8 hours.
+    Step 2: The Contractor class inherits all properties from its parent Employee but have to provide its own implementation to calculateSalary() method. In this case, we multiply the value of payment per hour with given working hours.
 
-Example 2: Drawing Shapes Example
+    Step 3: The FullTimeEmployee also has its own implementation of calculateSalary() method. In this case, we just multiply by a constant 8 hours.
+
+- Example 2: Drawing Shapes Example
 
 Consider the second example Shapes base type is “shape” and each shape has a color, size and so on. From this, specific types of shapes are derived(inherited)-circle, square, triangle and so on.
 The area for these shapes are different so make the area() method abstract and let the subclasses to override and implement.
