@@ -1,8 +1,8 @@
-2. Encapsulation
+### Encapsulation
 
 > Intent / Definition
 
- Encapsulation refers to combining data and associated functions as a single unit.
+Encapsulation refers to combining data and associated functions as a single unit.
 In OOP, data and functions operating on that data are combined together to form a single unit, which is referred to as a class.
 
 > Implementation

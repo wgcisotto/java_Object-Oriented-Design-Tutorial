@@ -1,16 +1,16 @@
-1. Abstraction
+### Abstraction
 
-- Intent
+#### Intent
 
 Abstraction means hiding lower-level details and exposing only the essential and relevant details to the users.
 
-- Real-World Example
+#### Real-World Example
 
 A car abstracts the internal details and exposes the driver to only details that are relevant to the interaction of the driver with the car.
 For example, when we have a phone call, we don't know the internal processing. In Java, we use the abstract class and interface to achieve abstraction.
 We never buy a "device," but we always buy something more specific: iPhone, GSII, Nokia 3310, etc. Here, the iPhone, GSII, and N3310 are concrete things; the device is abstract.
 
-- Implementation
+#### Implementation
 
 In Java, abstraction is achieved by Interfaces and Abstract classes. We can achieve 100% abstraction using Interfaces.
 Abstraction hiding internal details and showing functionality is known as abstraction.
@@ -37,11 +37,17 @@ The area for these shapes are different so make the area() method abstract and l
  Key Points about Abstract classes and Abstract methods
 
     An abstract class is a class that is declared with abstract keyword.
+    
     An abstract method is a method that is declared without an implementation.
+    
     An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+    
     A method defined abstract must always be redefined in the subclass, thus making overriding compulsory OR either make subclass itself abstract.
+    
     Any class that contains one or more abstract methods must also be declared with abstract keyword.
+    
     There can be no object of an abstract class. That is, an abstract class can not be directly instantiated with the new operator.
+    
     An abstract class can have parameterized constructors and default constructor is always present in an abstract class.
 
 
